@@ -1,1 +1,1 @@
-"use strict";console.log(oi);
+"use strict";var slide_hero=new Swiper(".slide-principal",{effect:"fade"});
