@@ -4,6 +4,14 @@
     direction: 'vertical',
     spaceBetween: 20,
     watchSlidesProgress: true,
+    breakpoints: {
+      290: {
+        direction: 'horizontal',
+      },
+      992: {
+        direction: 'vertical',
+      },
+    },
   });
 
   var slide_hero = new Swiper('.slide-principal', {

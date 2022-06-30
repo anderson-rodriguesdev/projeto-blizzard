@@ -2,7 +2,6 @@ body {
   background-color: $neutral-100;
 }
 .s-hero {
-  display: none;
   position: relative;
   .slide-principal {
     width: 100%;
@@ -146,11 +145,99 @@ body {
       }
     }
   }
+  @include responsive(1200px) {
+    .slide-thumbnail {
+      left: 1%;
+    }
+  }
+  @include responsive(991px) {
+    .slide-principal {
+      .swiper-wrapper {
+        .swiper-slide {
+          &.slide-02 {
+            .left-content {
+              max-width: 46.2rem;
+              h2 {
+                font-size: 5.8rem;
+              }
+            }
+          }
+          .left-content {
+            margin-left: 0;
+            h2 {
+              font-size: 6.4rem;
+            }
+          }
+          .right-content {
+            position: absolute;
+            right: 0;
+            .logo {
+              margin-top: -5.3rem;
+              margin-bottom: 21rem;
+            }
+          }
+        }
+      }
+    }
+    .slide-thumbnail {
+      max-width: 32rem;
+      left: 1.5rem;
+      top: initial;
+      bottom: 10.5rem;
+      height: 4.8rem;
+    }
+  }
+  @include responsive(560px) {
+    .slide-principal {
+      height: 62.2rem;
+      .swiper-wrapper {
+        .swiper-slide {
+          padding-top: 13.1rem;
+          &.slide-01 {
+            background-position-x: 38%;
+          }
+          &.slide-02 {
+            background-position-x: 63%;
+            .left-content {
+              h2 {
+                font-size: 4rem;
+              }
+              p {
+                max-width: 30.5rem;
+                font-size: 1.6rem;
+              }
+            }
+          }
+          &.slide-03 {
+            background-position-x: 60%;
+            .left-content {
+              h2 {
+                max-width: 33rem;
+              }
+              p {
+                max-width: 26rem;
+              }
+            }
+          }
+          .left-content {
+            max-width: 28.3rem;
+            h2 {
+              font-size: 4rem;
+            }
+          }
+          .right-content {
+            display: none;
+          }
+        }
+      }
+    }
+    .slide-thumbnail {
+      bottom: 6.5rem;
+    }
+  }
 }
 
 .s-games {
-  display: none;
-
   padding-top: 8.3rem;
   padding-bottom: 11rem;
   .top {
@@ -242,6 +329,67 @@ body {
           line-height: 2.4rem;
           img {
             margin-right: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(991px) {
+    .top {
+      .left-top {
+        span {
+          display: none;
+        }
+      }
+    }
+    .tab-games-content {
+      .tab-pane-games {
+        &.active {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .all-games-card {
+          height: 30.4rem;
+        }
+      }
+    }
+  }
+  @include responsive(560px) {
+    padding-top: 5.7rem;
+    padding-bottom: 6.9rem;
+    .top {
+      margin-bottom: 5.7rem;
+      .left-top {
+        h2 {
+          font-size: 2.8rem;
+        }
+      }
+      .right-top {
+        justify-content: flex-end;
+        ul {
+          display: none;
+        }
+        .btn-all-games {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .tab-games-content {
+      .tab-pane-games {
+        &.active {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2.4rem 1.6rem;
+        }
+        .all-games-card {
+          height: 21.2rem;
+          img {
+            max-width: 6.9rem;
+          }
+          span {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+            img {
+              display: none;
+            }
           }
         }
       }
