@@ -584,7 +584,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 5;
   width: 100%;
   height: 100%;
   display: flex;
@@ -604,7 +604,7 @@ body {
   }
   .box {
     position: relative;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     max-width: 69.6rem;
     height: 60rem;
@@ -705,6 +705,53 @@ body {
         transition: color 0.3s;
         &:hover {
           color: #ffffff;
+        }
+      }
+    }
+  }
+  @include responsive(991px) {
+    .box {
+      max-width: 62.6rem;
+      height: 50rem;
+    }
+  }
+  @include responsive(700px) {
+    .box {
+      max-width: 50rem;
+      height: 50rem;
+    }
+  }
+  @include responsive(560px) {
+    .box {
+      max-width: 30rem;
+      height: 50rem;
+      .close {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+      }
+      form {
+        max-width: 25rem;
+        .form-group {
+          input[type='text'],
+          input[type='password'] {
+            height: 4rem;
+          }
+        }
+        button {
+          line-height: 4rem;
+        }
+      }
+      .alternative-login {
+        margin-bottom: 2rem;
+      }
+      .message-user {
+        p {
+          font-size: 1.4rem;
+          margin-bottom: 1rem;
+        }
+        a {
+          font-size: 1.4rem;
         }
       }
     }

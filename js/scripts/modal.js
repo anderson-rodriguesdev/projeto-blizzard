@@ -5,7 +5,7 @@
 
   btnOpenModal.addEventListener('click', (event) => {
     event.preventDefault();
-    document.documentElement.classList.add('show-modal');
+    document.documentElement.classList.toggle('show-modal');
   });
 
   btnCloseModal.addEventListener('click', () => {
