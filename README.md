@@ -10,7 +10,7 @@ Clique no ícone para acessar o site do projeto
 ## Descrição
 
 Projeto desenvolvido no curso Codeboost. 
-Para a criação desse projeto criei um ambiente automatizado com gulp.
+Para desenvolver esse projeto criei um ambiente automatizado com gulp 😁
 
 
 ## Tecnologias utilizadas
