@@ -4,7 +4,7 @@
 Clique no ícone para acessar o site do projeto
 <br>
 <br>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ce1ac300-f384-436d-9146-345460c7e286/deploy-status)](https://app.netlify.com/sites/lp-blizzard-andersonrodriguesdev/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce1ac300-f384-436d-9146-345460c7e286/deploy-status)](https://lp-blizzard-andersonrodriguesdev.netlify.app/)
 
 
 ## Descrição
