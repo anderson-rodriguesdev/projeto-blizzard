@@ -212,3 +212,83 @@ header {
     display: none;
   }
 }
+
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+    aside {
+      transform: translateX(0%);
+    }
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      #020203 0%,
+      rgba(14, 17, 23, 0.92) 96.35%,
+      rgba(14, 17, 23, 0.9) 100%
+    );
+    backdrop-filter: blur(12px);
+    padding: 3rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    .logo {
+      img {
+        max-width: 15rem;
+        margin-bottom: 4rem;
+      }
+    }
+    nav {
+      ul {
+        li {
+          a {
+            padding: 1.5rem 0;
+            display: block;
+            font-size: 1.6rem;
+            color: #ffffff;
+            transition: color 0.3s;
+            &.active {
+              color: $primary-default;
+            }
+          }
+          .menu-dropdown {
+            display: none;
+            &.active {
+              display: block;
+            }
+            li {
+              &:last-child {
+                a {
+                  color: $primary-light;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
