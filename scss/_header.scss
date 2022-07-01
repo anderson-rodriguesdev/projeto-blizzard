@@ -88,6 +88,9 @@ header {
     .left-container {
       .logo {
         max-width: 6.9rem;
+        &::after {
+          bottom: -2.5rem;
+        }
       }
     }
     .right-container {
